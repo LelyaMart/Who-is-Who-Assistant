@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности Who Is Who Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #7f8c8d;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .permission {
+            background-color: #e8f4fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Политика конфиденциальности Who Is Who Assistant</h1>
+    <p class="last-updated">Последнее обновление: [Дата]</p>
+
+    <h2>1. Общая информация</h2>
+    <p>Who Is Who Assistant ("Приложение") — это дополнение для Google Workspace, предоставляющее ИИ-ответы о презентациях в Google Slides. В этой политике объясняется, как мы обрабатываем пользовательские данные.</p>
+
+    <h2>2. Сбор и использование данных</h2>
+    <h3>Что мы собираем:</h3>
+    <ul>
+        <li><strong>Содержание презентации</strong>: Текст из <strong>текущей открытой</strong> презентации Google Slides (через разрешение <span class="highlight">presentations.currentonly</span>).</li>
+        <li><strong>Вопросы пользователей</strong>: Запросы, отправленные в Приложение.</li>
+    </ul>
+
+    <h3>Как мы используем эти данные:</h3>
+    <ul>
+        <li>Для генерации ответов через сторонние ИИ-API (Gemini/OpenAI).</li>
+        <li><strong>Данные не хранятся</strong> постоянно; вся обработка происходит в памяти во время сеанса.</li>
+    </ul>
+
+    <h2>3. Сторонние сервисы</h2>
+    <ul>
+        <li><strong>ИИ-API</strong>: Запросы (текст презентации + вопросы пользователя) отправляются в Gemini/OpenAI. Применяются их политики:
+            <ul>
+                <li><a href="https://ai.google.dev/privacy" target="_blank">Политика конфиденциальности Google AI</a></li>
+                <li><a href="https://openai.com/policies/privacy-policy" target="_blank">Политика конфиденциальности OpenAI</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Требуемые разрешения</h2>
+    <p>Приложение запрашивает следующие разрешения Google Workspace:</p>
+    
+    <div class="permission">
+        <strong><span class="highlight">presentations.currentonly</span></strong>
+        <p>Доступ только для чтения к активной презентации. Позволяет анализировать текст текущего слайда для ответов на вопросы.</p>
+    </div>
+    
+    <div class="permission">
+        <strong><span class="highlight">script.external_request</span></strong>
+        <p>Необходимо для вызова сторонних ИИ-API (Gemini/OpenAI) при обработке запросов.</p>
+    </div>
+    
+    <div class="permission">
+        <strong><span class="highlight">script.container.ui</span></strong>
+        <p>Используется для отображения диалоговых окон и пользовательского интерфейса дополнения. Не предоставляет доступ к каким-либо данным.</p>
+    </div>
+
+    <h2>5. Безопасность данных</h2>
+    <ul>
+        <li>Все данные передаются через <strong>HTTPS</strong>.</li>
+        <li>Персональные/идентифицирующие данные пользователей не передаются третьим сторонам.</li>
+        <li>Приложение имеет минимально необходимый набор разрешений для работы.</li>
+    </ul>
+
+    <h2>6. Изменения в политике</h2>
+    <p>Обновления будут публиковаться на этой странице. Продолжение использования Приложения означает принятие изменений.</p>
+
+    <h2>7. Контакты</h2>
+    <p>По вопросам обращайтесь: oliama2477@gmail.com</p>
+</body>
+</html>
